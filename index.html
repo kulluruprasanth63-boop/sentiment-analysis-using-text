@@ -1,0 +1,67 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sentiment Analysis</h1>
+        <p class="subtitle">
+            Analyze the sentiment of your text using AI-based analysis.
+        </p>
+
+        <div class="card">
+
+            <label for="textInput">Enter your text</label>
+
+            <textarea
+                id="textInput"
+                placeholder="Example: I really enjoyed this product. It is amazing!"
+            ></textarea>
+
+            <button onclick="analyzeSentiment()">
+                Analyze Sentiment
+            </button>
+
+            <button class="clear-btn" onclick="clearText()">
+                Clear
+            </button>
+
+            <div id="result" class="result">
+                <h2>Result</h2>
+                <p id="sentiment">Enter some text to analyze.</p>
+                <p id="score"></p>
+            </div>
+
+        </div>
+
+        <div class="examples">
+            <h2>Try Examples</h2>
+
+            <button onclick="setExample('I love this product. It is excellent and amazing!')">
+                Positive Example
+            </button>
+
+            <button onclick="setExample('I hate this product. It is terrible and very bad.')">
+                Negative Example
+            </button>
+
+            <button onclick="setExample('The product is okay and it is available today.')">
+                Neutral Example
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
